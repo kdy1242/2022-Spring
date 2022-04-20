@@ -12,7 +12,7 @@ import java.util.List;
 @SpringBootApplication
 public class BoardApplication {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IllegalAccessException {
         //1. Spring 컨테이너를 구동한다.
         AbstractApplicationContext container = new GenericXmlApplicationContext("applicationContext.xml");
         //2. Spring 컨테이너로부터 BoardServiceImpl 객체를 LookUp한다.

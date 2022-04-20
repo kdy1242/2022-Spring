@@ -5,7 +5,7 @@ import java.util.List;
 public interface BoardService {
     //CRUD 기능의 메서드 구현
     //글등록
-    void insertBoard(BoardVO vo);
+    void insertBoard(BoardVO vo) throws IllegalAccessException;
 
     //글 수정
     void updateBoard(BoardVO vo);
